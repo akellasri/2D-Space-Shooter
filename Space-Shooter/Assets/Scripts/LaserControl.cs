@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserController : MonoBehaviour
+public class LaserControl : MonoBehaviour
 {
 	private Transform laser;
-	private float speed;
+	public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
         laser = GetComponent<Transform> ();
+
+        //set gravity to 0 to not make it fall down?
+        Physics2D.gravity = Vector2.zero;
     }
     
     // move at set period at time
@@ -24,13 +27,13 @@ public class LaserController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == 'Enemy')
+        if(other.tag == "Enemy")
         {
         	Destroy (other.gameObject);
         	Destroy (gameObject);
         	// Increase Score?
         }
-        else if (other.tag == 'Base')
+        else if (other.tag == "Shield")
         	Destroy (gameObject);
         // reaction to shield?
         
