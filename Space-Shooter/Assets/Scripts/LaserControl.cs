@@ -31,7 +31,7 @@ public class LaserControl : MonoBehaviour
         {
         	Destroy (other.gameObject);
         	Destroy (gameObject);
-        	// Increase Score?
+        	PlayerScore.playerScore += 1;
         }
         else if (other.tag == "Shield")
         	Destroy (gameObject);
