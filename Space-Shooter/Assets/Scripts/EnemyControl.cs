@@ -25,13 +25,16 @@ public class EnemyControl : MonoBehaviour
     {
     	enemyHolder.position += Vector3.right * speed;
     	foreach(Transform enemy in enemyHolder){
-    		if (enemy.position.x < -10.5 || enemy.position.x > 10.5){
+    		if (enemy.position.x < -10 || enemy.position.x > 10){
     			speed = -speed;
     			enemyHolder.position += Vector3.down * 0.5f;
     			return;
     		}
 
     		//EnemyBulletControl
+            if (Random.value > fireRate){
+                Instantiate(shot, enemy.position, enemy.rotation);
+            }
 
     		if(enemy.position.y <= -4){
     			GameOver.isPlayerDead = true;
