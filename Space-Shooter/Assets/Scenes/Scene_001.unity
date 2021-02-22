@@ -1052,6 +1052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 7023417666739757419, guid: 263201003ae625647aa26180036140a6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8694379799004446907, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1145,7 +1150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240133847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -1972,6 +1977,11 @@ PrefabInstance:
     - target: {fileID: 7023417666739757419, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023417666739757419, guid: 263201003ae625647aa26180036140a6,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8694379799004446907, guid: 263201003ae625647aa26180036140a6,
