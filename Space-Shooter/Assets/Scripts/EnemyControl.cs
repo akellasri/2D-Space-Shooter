@@ -13,6 +13,9 @@ public class EnemyControl : MonoBehaviour
 	public Text winText;
 	public float fireRate = 0.997f;
 
+    //counter for legs
+    public static float counter = 0;
+
     // Start is called before the first frame update
     void Start()
     {

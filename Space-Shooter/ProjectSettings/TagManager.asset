@@ -7,6 +7,10 @@ TagManager:
   - Bullet
   - Shield
   - Enemy
+  - Leg0
+  - Leg1
+  - Leg2
+  - Leg3
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,33 @@ public class LaserControl : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
-        	Destroy (other.gameObject);
+            //destroy leg by leg -> Enemy can take 5 hits
+            if (EnemyControl.counter == 0){
+                GameObject leg = GameObject.FindWithTag("Leg0");
+                leg.SetActive(false);
+                EnemyControl.counter += 1;
+            }   
+            else if (EnemyControl.counter == 1){
+                GameObject leg = GameObject.FindWithTag("Leg1");
+                leg.SetActive(false);
+                EnemyControl.counter += 1;
+            }
+            else if (EnemyControl.counter == 2){
+                GameObject leg = GameObject.FindWithTag("Leg2");
+                leg.SetActive(false);
+                EnemyControl.counter += 1;
+            }
+            else if (EnemyControl.counter == 3){
+                GameObject leg = GameObject.FindWithTag("Leg3");
+                leg.SetActive(false);
+                EnemyControl.counter += 1;
+            }
+            else{
+                Destroy (other.gameObject);
+            }
+                
+            //gameObject.SetActive(false);
+
         	Destroy (gameObject);
         	PlayerScore.playerScore += 1;
         }
