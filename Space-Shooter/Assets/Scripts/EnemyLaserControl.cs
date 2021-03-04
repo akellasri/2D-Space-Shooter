@@ -35,9 +35,15 @@ public class EnemyLaserControl : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-        	Destroy (other.gameObject);
-        	Destroy (gameObject);
-        	GameOver.isPlayerDead = true;
+            if(PlayerControl.health > 0){
+                Destroy(gameObject);
+                PlayerControl.health -= 1;
+            }
+            else{
+            	Destroy (other.gameObject);
+            	Destroy (gameObject);
+            	GameOver.isPlayerDead = true;
+            }
         }
         else if (other.tag == "Shield")
         {

@@ -15,7 +15,9 @@ public class PlayerControl : MonoBehaviour
 
 	private float nextFire;
 
-    // needs healt to determine death?
+    // healt to determine death
+    public static float health = 3;
+
 
     // Start is called before the first frame update
     void Start()

@@ -11,7 +11,7 @@ public class EnemyControl : MonoBehaviour
 
 	public GameObject shot;
 	public Text winText;
-	public float fireRate = 2.3f;
+	public float fireRate = 3.3f;
 
     //counter for legs
     public static float counter = 0;
