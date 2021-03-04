@@ -13,6 +13,7 @@ public class RestartLevel : MonoBehaviour
         	PlayerScore.playerScore = 0;
         	GameOver.isPlayerDead = false;
         	Time.timeScale = 1;
+            ShieldControl.hit = 0;
 
         	SceneManager.LoadScene("Scene_001");
         }

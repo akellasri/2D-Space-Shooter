@@ -11,7 +11,7 @@ public class EnemyControl : MonoBehaviour
 
 	public GameObject shot;
 	public Text winText;
-	public float fireRate = 0.997f;
+	public float fireRate = 2.3f;
 
     //counter for legs
     public static float counter = 0;
@@ -20,8 +20,9 @@ public class EnemyControl : MonoBehaviour
     void Start()
     {
         winText.enabled = false;
-        InvokeRepeating("MoveEnemy", 0.1f, 0.3f);
+        InvokeRepeating("MoveEnemy", 0.1f, 0.25f);
         enemyHolder = GetComponent<Transform> ();
+        InvokeRepeating("EnemyShot", 0.2f, fireRate);
     }
 
     void MoveEnemy()
@@ -34,10 +35,11 @@ public class EnemyControl : MonoBehaviour
     			return;
     		}
 
-    		//EnemyBulletControl
-            if (Random.value > fireRate){
-                Instantiate(shot, enemy.position, enemy.rotation);
-            }
+    		//EnemyBulletControl -> replaced by invoke
+            //if (Random.value > fireRate){
+            //    Instantiate(shot, enemy.position, enemy.rotation);
+            //}
+
 
     		if(enemy.position.y <= -4){
     			GameOver.isPlayerDead = true;
@@ -45,13 +47,23 @@ public class EnemyControl : MonoBehaviour
     		}
     	}
 
+        /* Not needed it only one enemy
     	if(enemyHolder.childCount == 1){
     		CancelInvoke();
     		InvokeRepeating("MoveEnemy", 0.1f, 0.25f);
-    	}
+
+            //InvokeRepeating("EnemyShot", 0.2f, 0.5f);
+    	}*/
 
     	if(enemyHolder.childCount == 0){
     		winText.enabled = true;
     	}
+    }
+
+    void EnemyShot()
+    {
+        foreach(Transform enemy in enemyHolder){
+            Instantiate(shot, enemy.position, enemy.rotation);
+        }
     }
 }
