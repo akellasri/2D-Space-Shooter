@@ -319,7 +319,7 @@ PrefabInstance:
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1.8150859
       objectReference: {fileID: 0}
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
@@ -419,6 +419,12 @@ MonoBehaviour:
   speed: 0.05
   maxBound: 10.5
   minBound: -10.5
+  shieldRenderer: {fileID: 0}
+  shieldColor: {r: 0, g: 0, b: 0, a: 0}
+  rFloat: 0.06243324
+  gFloat: 0.2169811
+  bFloat: 0.1111494
+  aFloat: 1
 --- !u!50 &284968423
 Rigidbody2D:
   serializedVersion: 4
