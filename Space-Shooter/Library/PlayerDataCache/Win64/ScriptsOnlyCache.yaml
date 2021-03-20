@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - GameOver
     - LaserControl
     - PlayerControl
+    - PlayerScore
     - RestartLevel
     - ShieldControl
     Unity.Rider.Editor.dll:
@@ -46,6 +47,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -60,6 +65,81 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11378}
     - Class: 114
       Script: {instanceID: 11412}
+    - Class: 114
+      Script: {instanceID: 11454}
+    - Class: 114
+      Script: {instanceID: 11722}
+    - Class: 114
+      Script: {instanceID: 11736}
+    - Class: 114
+      Script: {instanceID: 11846}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 12550}
+    - Class: 114
+      Script: {instanceID: 12714}
+    - Class: 114
+      Script: {instanceID: 13064}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Scene_002.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11234}
+    - Class: 114
+      Script: {instanceID: 11250}
+    - Class: 114
+      Script: {instanceID: 11366}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11412}
+    - Class: 114
+      Script: {instanceID: 11454}
     - Class: 114
       Script: {instanceID: 11722}
     - Class: 114
@@ -91,7 +171,7 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: ac1e606d344f25bbd3406250f950ee90
+      Hash: 0ff2c956a18da17bdb94846ccfb74f10
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShieldControl
@@ -307,7 +387,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 6ba6f9f84ebc2b841d1eaa140f09a681
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyLaserControl
@@ -566,4 +646,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Scene_001.unity
+  - Assets/Scenes/Scene_002.unity
   playerPath: Z:/Dokumente/Uni/Master/2D-Space-Shooter/Space-Shooter/Space-Shooter.exe

@@ -35,7 +35,7 @@ public class EnemyLaserControl : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            if(PlayerControl.health > 0){
+            if(PlayerControl.health > 1){
                 Destroy(gameObject);
                 PlayerControl.health -= 1;
             }

@@ -29,7 +29,7 @@ public class EnemyControl : MonoBehaviour
     {
     	enemyHolder.position += Vector3.right * speed;
     	foreach(Transform enemy in enemyHolder){
-    		if (enemy.position.x < -10 || enemy.position.x > 10){
+    		if (enemy.position.x < -8.5 || enemy.position.x > 8.5){
     			speed = -speed;
     			enemyHolder.position += Vector3.down * 0.5f;
     			return;
