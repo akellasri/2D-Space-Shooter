@@ -314,7 +314,7 @@ PrefabInstance:
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 308471406}
   - component: {fileID: 308471405}
   m_Layer: 5
-  m_Name: Win
+  m_Name: Win1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,8 +480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00025177002, y: 0.000103}
-  m_SizeDelta: {x: 456.2185, y: 94.03517}
+  m_AnchoredPosition: {x: 3.4, y: 0.000022888}
+  m_SizeDelta: {x: 820.9669, y: 569.99994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308471405
 MonoBehaviour:
@@ -515,7 +515,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You win!
+  m_Text: 'You win!
+
+    Enter next level by pressing "space"'
 --- !u!222 &308471406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1327,7 +1329,7 @@ RectTransform:
   - {fileID: 104879191}
   - {fileID: 308471404}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2043,7 +2045,7 @@ PrefabInstance:
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2486029676811571378, guid: 263201003ae625647aa26180036140a6,
         type: 3}
